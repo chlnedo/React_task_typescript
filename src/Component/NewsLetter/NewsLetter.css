@@ -1,0 +1,114 @@
+.newsletter-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px; 
+    height: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .newsletter-form-container {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .newsletter-image-container {
+    flex: 1;
+  }
+  
+  .newsletter-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .newsletter-form input {
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 8px 12px;
+    width: 100%;
+    font-size: 0.875rem;
+  }
+  
+  .newsletter-form input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 140, 255, 0.2);
+  }
+  
+  .newsletter-form button {
+    background-color: #008cf2;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    color: white;
+    font-size: 0.875rem;
+    cursor: pointer;
+  }
+  
+  .newsletter-form button:hover {
+    background-color: #006ad8;
+  }
+  
+  .newsletter-message-card,
+  .newsletter-error-card {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    padding: 16px;
+    margin-top: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    text-align: center;
+  }
+  
+  .newsletter-error-card {
+    background-color: #ffebee;
+  }
+  
+  .newsletter-message,
+  .newsletter-error {
+    margin-bottom: 13px;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  .white-text {
+    color: azure;
+  }
+  
+  .newsletter-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Media Queries */
+  
+  @media screen and (max-width: 768px) {
+    .newsletter-card {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .newsletter-form-container {
+      padding-right: 0;
+    }
+  
+    .newsletter-image-container {
+      margin-top: 20px; 
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .newsletter-form-container,
+    .newsletter-image-container {
+      width: 100%;
+    }
+  }
+  

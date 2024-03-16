@@ -1,0 +1,55 @@
+
+
+.language-selector {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .language-button {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+  
+  .language-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    margin-top: 5px;
+    padding: 0;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    z-index: 1;
+    
+  }
+  
+  .language-list li {
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .language-list li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .language-selector:hover .language-list {
+    display: block;
+  }
+
+  .Arrow {
+    vertical-align: middle;
+    margin-left: 5px; 
+  }
+  
+  .Arrow.up {
+    transform: rotate(180deg);
+  }
+
+ 
+  

@@ -1,0 +1,94 @@
+/* CSS for Desktop */
+
+.table-container {
+    width: 80%;
+    overflow-x: auto;
+    margin: 0 auto;
+  }
+  
+  .scrollable-table {
+    max-height: 400px;
+    overflow-y: auto;
+  }
+  
+  .coin-price-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    position: relative; 
+  }
+  
+  .coin-price-table tr {
+    transition: transform 0.3s; 
+  }
+  
+  .coin-price-table tr:hover {
+    transform: translateY(-3px); 
+  }
+  
+  .coin-price-table th,
+  .coin-price-table td {
+    padding: 12px 16px;
+    border: 1px solid #e0e0e0;
+    text-align: left;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #6c757d;
+  }
+  
+  .coin-price-table th {
+    background-color: #f5f5f5;
+    font-weight: 600;
+  }
+  
+  .coin-price-table tr:nth-child(even) {
+    background-color: #f5f5f5;
+  }
+  
+  .coin-price-table td:first-child {
+    border-left: none;
+  }
+  
+  .coin-price-table td:last-child {
+    border-right: none;
+  }
+  
+  .coin-price-table th:first-child {
+    border-left: none;
+  }
+  
+  .coin-price-table th:last-child {
+    border-right: none;
+  }
+  
+  .red {
+    color: red;
+  }
+  
+  .green {
+    color: green;
+  }
+  
+  .white-text {
+    color: #f5f5f5;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .table-container {
+      width: 100%;
+    }
+  }
+  
+  /* Media Queries for Mobile */
+  @media (max-width: 576px) {
+    .table-container {
+      width: 100%;
+      overflow-x: auto;
+    }
+  }
+
+  .chart{
+    width: 70px;
+  }
+  

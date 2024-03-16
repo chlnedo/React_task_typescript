@@ -1,0 +1,59 @@
+
+.currency-card {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    width: 300px;
+    max-height: 400px; 
+    overflow-y: auto; 
+    backdrop-filter: blur(8px);
+  }
+  
+  .scrollable-card {
+    overflow-y: auto;
+    max-height: 300px; 
+  }
+  
+  .currency-column {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .currency-item {
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .currency-item:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .remaining-currencies {
+    margin-top: 16px;
+  }
+
+  button{
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+
+  .Arrow {
+    vertical-align: middle;
+    margin-left: 5px; 
+  }
+  
+  .Arrow.up {
+    transform: rotate(180deg);
+  }

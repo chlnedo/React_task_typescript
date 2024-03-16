@@ -1,0 +1,14 @@
+.card-container {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 66px;
+  gap: 90px;
+
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    flex-wrap: wrap;
+  }
+}
